@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ROG\\source\\repos\\Manage\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ROG\\source\\repos\\Manage\\Core\\Core.csproj": {
+    "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROG\\source\\repos\\Manage\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\ROG\\source\\repos\\Manage\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROG\\source\\repos\\Manage\\Core\\obj\\",
+        "projectPath": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\shahnigarek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shahnigarek\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,17 +58,17 @@
         }
       }
     },
-    "C:\\Users\\ROG\\source\\repos\\Manage\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ROG\\source\\repos\\Manage\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\ROG\\source\\repos\\Manage\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ROG\\source\\repos\\Manage\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\shahnigarek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shahnigarek\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ROG\\source\\repos\\Manage\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\ROG\\source\\repos\\Manage\\Core\\Core.csproj"
+              "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\shahnigarek\\Desktop\\AcademyApp\\Core\\Core.csproj"
               }
             }
           }

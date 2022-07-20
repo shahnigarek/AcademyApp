@@ -14,7 +14,7 @@ namespace DataAccess.Contexts
         static Dbcontexts()
         {
             Students = new List<Student>();
-            Groups = new List<Group>();
+            Groups=new List<Group> (); 
 
         }
 

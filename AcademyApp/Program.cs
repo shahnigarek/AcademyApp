@@ -2,6 +2,7 @@
 using Core.Entities;
 using Core.Helpers;
 using DataAccess.Repositories.Implementations;
+using Manage.Controllers;
 using System;
 namespace Manage
 {
@@ -9,6 +10,7 @@ namespace Manage
     {
        static void Main()
         {
+            GroupController _groupController = new GroupController(); 
             GroupRepository _groupRepository = new GroupRepository();
             ConsoleHelper.WriteTextWithColor(ConsoleColor.Green, "Welcome");
             Console.WriteLine();
@@ -32,65 +34,33 @@ namespace Manage
                     {
                         switch (selectedNumber)
                         {
-                            #region CreateGroup
                             case (int)Options.CreateGroup:
-                                 ConsoleHelper.WriteTextWithColor(ConsoleColor.DarkMagenta, "Please enter group name:");
-                                string name=Console.ReadLine();
-                                MaxSize: ConsoleHelper.WriteTextWithColor(ConsoleColor.DarkMagenta, "Please enter group maxsize");
-                                string size = Console.ReadLine();
-                                int maxsize;
-                                result=int.TryParse(size,out maxsize);
-                                if (result)
-                                {
-                                    
-                                    Group group = new Group
-                                    {
-                                        Name = name,
-                                        MaxSize=maxsize
+                                _groupController.CreateGroup();
+                                break;
 
-
-                                    };
-                                    var createdGroup = _groupRepository.Create(group);
-                                    _groupRepository.Create(group);
-                                    ConsoleHelper.WriteTextWithColor(ConsoleColor.Green,$"{createdGroup.Name} with maxsize-{createdGroup.MaxSize} was successufully created");
-
-                                }
-                                else
-                                {
-                                    ConsoleHelper.WriteTextWithColor(ConsoleColor.Red, "Please,enter right number!!");
-                                    goto MaxSize;
-                                }
-                                 break;
-
-                                #endregion CreateGroup
-
-                            case (int)Options.DeleteGroup   :
+                            case (int)Options.DeleteGroup:
+                                _groupController.DeleteGroup();
                                 break;
                             case (int)Options.UpdateGroup:
+                                _groupController.UpdateGroup(); 
                                 break;
                             case (int)Options.AllGroups:
-                                var groups=_groupRepository .GetAll();
-                                 ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, "All groups");
-                                foreach(var group in groups)
-                                {
-                                    Console.WriteLine($"Name:{group.Name},maxSize:{group.MaxSize}");
-                                }
+                                _groupController.AllGroups();
                                 break;
+
                                     case (int)Options.GetGroupByName:
-                                break;
+                                _groupController.GetGroupName();
+                                    break;
+
                             case (int)Options.Exit:
-                                ConsoleHelper.WriteTextWithColor(ConsoleColor.Green, "Thanks for using application");
+                             _groupController.Exit();
                                 return;
                                 
                         }
 
 
                     }
-                    else
-                    {
-                        ConsoleHelper.WriteTextWithColor(ConsoleColor.Red, "Please,enter right number!!");
-
-                    }
+                   
                 }
 
 

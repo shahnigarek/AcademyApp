@@ -9,11 +9,11 @@ namespace Core.Constants
     public enum Options
 
     {
-        CreateGroup=1,
+        Exit,
+        CreateGroup,
         UpdateGroup,
         DeleteGroup,
         AllGroups,
         GetGroupByName,
-        Exit
     }
 }
