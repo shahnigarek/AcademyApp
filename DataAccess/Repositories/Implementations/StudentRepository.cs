@@ -11,8 +11,12 @@ namespace DataAccess.Repositories.Implementations
 {
     public class StudentRepository : IRepository<Student>
     {
+        private static int id;
         public Student Create(Student entity)
         {
+
+            id++;
+            entity.ID = id;
             Dbcontexts.Students.Add(entity);
             return entity;  
 
@@ -54,7 +58,7 @@ namespace DataAccess.Repositories.Implementations
             if(student != null)
             {
                 student.ID = entity.ID;
-                student.Name = entity.Name;
+                student.ID = entity.ID;
                 student.Surname = entity.Surname;
                 student.Age = entity.Age;
             }

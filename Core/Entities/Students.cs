@@ -17,5 +17,7 @@ namespace Core.Entities
 
         public byte Age { get; set; }
 
+        public Group Group{ get; set; }
+      
     }
 }

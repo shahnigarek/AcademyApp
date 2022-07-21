@@ -15,5 +15,11 @@ namespace Core.Constants
         DeleteGroup,
         AllGroups,
         GetGroupByName,
+        CreateStudent,
+        UpdateStudent,
+        DeleteStudent,
+        GetAllStudentsByGroup,
+        GetStudentByGroup,
+
     }
 }
